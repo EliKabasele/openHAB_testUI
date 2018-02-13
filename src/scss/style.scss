@@ -1,0 +1,70 @@
+// Main Sass File
+
+$bg-color : #333;
+$font-color: #fff;
+$primary-color: #008ed6;
+
+body{
+    background: $bg-color;
+    color: $font-color;
+}
+
+.navbar{
+    border-bottom: $primary-color 5px solid;
+    opacity: 0.8;
+}
+
+#display-section{
+    background-size: cover;
+    min-height: 650px;
+    background: #fff; 
+
+    
+}
+
+.home-inner{
+    padding-top: 80px;
+}
+
+#adjust-head-section {
+    min-height: 500px;
+
+    #btn-red {
+        background: rgb(255, 0, 0);;
+    }
+    #btn-green {
+        background: rgb(60, 255, 0);
+    }
+    #btn-blue {
+        background: rgb(25, 0, 255);
+    }
+    #btn-pink {
+        background: rgb(255, 0, 212);
+    }
+    #btn-orange {
+        background: rgba(255, 94, 0, 0.993);
+    }
+    #btn-yellow {
+        background: rgb(255, 217, 0);
+    }
+    #btn-lemon {
+        background: rgb(208, 255, 0);
+    }
+    #btn-red {
+        background: red;
+    }
+    #btn-turkis {
+        background: rgb(0, 255, 234);
+    }
+    #btn-lila {
+        background: rgb(195, 0, 255);
+    }
+    #btn-white {
+        background: rgb(247, 244, 244);
+    } 
+    #btn-sunset {
+        background: rgb(255, 153, 0);
+    }
+}
+
+

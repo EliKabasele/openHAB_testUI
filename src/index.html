@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>OpenHAB UI </title>
+    </head>
+
+    <body id="home">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">OpenHAB-2</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#display-section" class="nav-link">Display Screen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="adjustPage.html" class="nav-link">Adjudt Light</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- DISPLAY SECTION -->
+        <header id="display-section">
+            <div class="dark-overlay">
+                <div class="home-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="card bg-primary text-center card-form">
+                                    <div class="card-body" style="min-height: 350px;">
+                                        <input type="submit" value="Display Available Things" onclick = "fetch_All_Things()" class="btn btn-outline-light btn-block" style="min-height: 80px;"></input>
+
+                                        <input type="submit" value="Display A Thing With ID" onclick = "fetch_A_Thing()" class="btn btn-outline-light btn-block" style="min-height: 80px;"></input>
+
+                                        <input type="submit" value="Display state value"onclick = "getState_value()" class="btn btn-outline-light btn-block" style="min-height: 80px;"></input>
+
+                                        <input type="submit" value="Set state value" onclick = "setState_value()" class="btn btn-outline-light btn-block" style="min-height: 80px;"></input>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="card bg-faded text-center">
+                                        <div class="card-body" style="min-height: 550px;" >
+                                            <div class="row">
+                                                <div class="col-lg-5">
+                                                    <div class="card bg-primary text-center">
+                                                        <div class="card-body">
+                                                            <form>
+                                                                <div class="form-group">
+                                                                    <input type="text" id="inputThing_UID" class="form-control form-control-lg" placeholder="Thing - UID">
+                                                                </div>
+                                    
+                                                                <div class="form-group">
+                                                                    <input type="text" id="inputChannel_ID" class="form-control form-control-lg" placeholder="Channel- Name">
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <input type="text" id="inputState_value" class="form-control form-control-lg" placeholder="State values">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-lg-7">
+                                                    <div class="card  text-center">
+                                                        <div class="card-body" id="outputAll" style="min-height: 500px; background-color: lightgrey; color: black; text-align: left">
+                                                            <h3>Output</h3>
+                                                                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+       
+
+        <script src="./lib/openHAB-service.js"></script>
+        <script src="./ui-app.js"></script>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+       
+
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>OpenHAB UI</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand">OpenHAB-2</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Display Screen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="adjustPage.html" class="nav-link">Adjudt Light</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+    </nav>
+     <!-- ADJUST SECTION -->
+
+     <section id="adjust-head-section">
+        <div class="home-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="p-2">
+                        <h5 class="display-4">Adjust Light</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                        <div class="col-lg-4">
+                            <div class=" text-center ">
+                                <div style="min-height: 450px;">
+                                    <input type="submit" id="btn-red" onclick = "btn_red()" value="RED" class="btn btn-outline-light btn-block" style="min-height: 80px;"></input>
+
+                                    <input type="submit" id="btn-blue" onclick = "btn_blue()" value="BLUE" class="btn btn-outline-light btn-block" style="min-height: 80px;"></input>
+
+                                    <input type="submit" id="btn-pink" onclick = "btn_pink()" value="PINK" class="btn btn-outline-light btn-block" style="min-height: 80px;"></input>
+
+                                    <input type="submit" id="btn-orange" onclick = "btn_orange()" value="ORANGE" class="btn btn-outline-light btn-block" style="min-height: 80px;"></input>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                                <div class="text-center ">
+                                    <div  style="min-height: 350px;">
+                                        <input type="submit" id="btn-yellow" onclick="btn_yellow()" value="YELLOW" class="btn btn-outline-light btn-block" style="min-height: 80px;"></input>
+    
+                                        <input type="submit" id="btn-lemon" onclick="btn_lemon()" value="LEMON" class="btn btn-outline-light btn-block" style="min-height: 80px;"></input>
+    
+                                        <input type="submit" id="btn-turkis" onclick="btn_turkis()" value="TURKIS" class="btn btn-outline-light btn-block" style="min-height: 80px;"></input>
+    
+                                        <input type="submit" id="btn-lila" onclick="btn_lila()" value="LILA" class="btn btn-outline-light btn-block" style="min-height: 80px;"></input>
+
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                                <div class="text-center ">
+                                    <div  style="min-height: 350px;">
+                                        <input type="submit" id="btn-white" onclick="btn_white()" value="WHITE" class="btn btn-outline-light btn-block" style="min-height: 80px;"></input>
+    
+                                        <input type="submit" id="btn-sunset" onclick="btn_sunset()" value="SUNSET" class="btn btn-outline-light btn-block" style="min-height: 80px;"></input>
+    
+                                        <input type="submit" value="SWITCH ON" onclick="SWITCH_ON()" class="btn btn-outline-light btn-block" style="min-height: 80px;"></input>
+    
+                                        <input type="submit" value="SWITCH OFF" onclick="SWITCH_OFF()" class="btn btn-outline-light btn-block" style="min-height: 80px;"></input>
+
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="./lib/openHAB-service.js"></script>
+    <script src="./ui-app.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

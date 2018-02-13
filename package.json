@@ -1,0 +1,22 @@
+{
+  "name": "openhab_ui",
+  "version": "1.0.0",
+  "description": "UI for Smart Home with openHAB Framework",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Eli Kabasele Kabasele (ek058@hdm-stuttgart.de)",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

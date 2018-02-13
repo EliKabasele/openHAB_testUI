@@ -1,0 +1,42 @@
+body {
+  background: #333;
+  color: #fff; }
+
+.navbar {
+  border-bottom: #008ed6 5px solid;
+  opacity: 0.8; }
+
+#display-section {
+  background-size: cover;
+  min-height: 650px;
+  background: #fff; }
+
+.home-inner {
+  padding-top: 80px; }
+
+#adjust-head-section {
+  min-height: 500px; }
+  #adjust-head-section #btn-red {
+    background: red; }
+  #adjust-head-section #btn-green {
+    background: #3cff00; }
+  #adjust-head-section #btn-blue {
+    background: #1900ff; }
+  #adjust-head-section #btn-pink {
+    background: #ff00d4; }
+  #adjust-head-section #btn-orange {
+    background: rgba(255, 94, 0, 0.993); }
+  #adjust-head-section #btn-yellow {
+    background: #ffd900; }
+  #adjust-head-section #btn-lemon {
+    background: #d0ff00; }
+  #adjust-head-section #btn-red {
+    background: red; }
+  #adjust-head-section #btn-turkis {
+    background: #00ffea; }
+  #adjust-head-section #btn-lila {
+    background: #c300ff; }
+  #adjust-head-section #btn-white {
+    background: #f7f4f4; }
+  #adjust-head-section #btn-sunset {
+    background: #ff9900; }
